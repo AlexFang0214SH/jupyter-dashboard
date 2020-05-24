@@ -11,6 +11,6 @@ warnings.filterwarnings("ignore")
 # import libraries
 # source: https://github.com/duarteocarmo/interactive-dashboard-post
 import requests
-import textblob
+# import textblob
 import plotly.express as px
 pd.set_option('display.max_colwidth', -1) # don't cut my pandas dataframes
