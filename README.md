@@ -1,6 +1,21 @@
+# Jupyter Dashboard - Voila
+
+## Introduction
+This notebook is a dashboard publication tool via Jupyter-Voila. It is developed based on this [tutorial](https://github.com/duarteocarmo/interactive-dashboard-post) by Duarte O. Carmo.
+
+He has also published an article to outline his tutorial [here](https://pbpython.com/interactive-dashboards.html).
+
+This notebook is organized into modules to complete the following tasks:
+
+1. Data Analysis
+2. Data Visualization
+3. Dashboard Publication
+
+## Original README
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/duarteocarmo/interactive-dashboard-post/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FDashboard.ipynb)  [![Python](https://img.shields.io/badge/python-v3.7-blue)](https://www.python.org/)  [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://duarteocarmo.com)
 
-# From notebook to web application 📔​+🔮=💥 
+# From notebook to web application 📔​+🔮=💥
 
 [Visit the original blog post!](https://duarteocarmo.com)
 
@@ -12,7 +27,7 @@
 
 ## What is this? :thinking:
 
-A blog post/tutorial for the [Practical Business Python](https://pbpython.com/) blog that teaches how to create web applications from jupyter notebooks and then deploy them. 
+A blog post/tutorial for the [Practical Business Python](https://pbpython.com/) blog that teaches how to create web applications from jupyter notebooks and then deploy them.
 
 [Visit the live dashboard](https://mybinder.org/v2/gh/duarteocarmo/interactive-dashboard-post/master?urlpath=%2Fvoila%2Frender%2Fnotebooks%2FDashboard.ipynb) (might take a bit to load because of binder)
 
@@ -55,7 +70,7 @@ $ . env/bin/activate
 Install the requirements:
 
 ```bash
-(env) $ pip install -r requirements.txt 
+(env) $ pip install -r requirements.txt
 ```
 
 Launch [jupyter lab](https://jupyterlab.readthedocs.io/en/stable/):
@@ -80,7 +95,7 @@ If you still have problems, follow [these instructions](https://plot.ly/python/g
 
 ## How do I run the dashboard? :bar_chart:
 
-Follow the instructions above until you have the requirements installed, and then: 
+Follow the instructions above until you have the requirements installed, and then:
 
 ```bash
 (env) $ voila notebooks/Dashboard.ipynb
