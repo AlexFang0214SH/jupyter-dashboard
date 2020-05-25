@@ -1,28 +1,5 @@
 # 03A.02 - create count plot
 
-# show data elements
-# 0   location                      63 non-null     object
-# 1   tests_with_results            56 non-null     float64
-# 2   percentage_test_positive      39 non-null     float64
-# 3   total_tests_per_1k_residents  53 non-null     float64
-# print(df_total_kff.info())
-
-# subset data and drop null values for plot
-df_results_plot = df_total_kff[['location', 'tests_with_results']]
-
-# https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
-# print(pd.isna(df_results_plot))
-df_results_plot['tests_with_results'].fillna(0)
-
-# drop total count to scale plot correctly
-# https://stackoverflow.com/questions/16396903/delete-the-first-three-rows-of-a-dataframe-in-pandas
-df_results_plot = df_results_plot.iloc[1:]
-
-# create histogram
-plt.figure(figsize=(12, 8))
-plt.title('Historgram: Total COVID-19 Tests with Results\n Note: Each Record = Total for Single US State')
-sns.distplot(df_results_plot['tests_with_results'], bins=50)
-
 # create countplot
 plt.figure(figsize=(12, 8))
 plt.title('Bar Plot: Total COVID-19 Tests with Results by US State\n Note: Each Record = Total for Single US State')
