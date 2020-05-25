@@ -1,5 +1,4 @@
 # 02B.01 - exploratory data analysis (eda)
-# Source data: https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv
 
 # convert col to numeric type
 # reference: https://stackoverflow.com/questions/47333227/pandas-valueerror-cannot-convert-float-nan-to-integer
@@ -23,5 +22,5 @@ def convert_date(col):
         errors = 'coerce'
     )
 
-# nytimes dataset
-convert_num(df_total['date'])
+convert_date(df_total['Period'])
+convert_date(df_total['Period_date'])
