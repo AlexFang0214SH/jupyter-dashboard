@@ -1,7 +1,7 @@
 # 03B.02 - create time series
 
 # set plot size and title
-plt.figure(figsize=(16, 12))
+plt.figure(figsize=(18, 12))
 
 # create time series plot
 def time_series(x_col, y_col, df, msg):
@@ -11,6 +11,7 @@ def time_series(x_col, y_col, df, msg):
         data=df
     )
     plt.title(msg)
+    plt.xticks(rotation=45)
     plt.show()
 
 time_series(
