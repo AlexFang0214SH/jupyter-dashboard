@@ -1,7 +1,8 @@
 jupyterlab
 requests
 pandas
-textblob
-plotly-express
+numpy
+scipy
+statsmodels
+matplotlib
 voila
-
